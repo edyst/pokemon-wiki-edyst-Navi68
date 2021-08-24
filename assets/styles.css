@@ -1,0 +1,682 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+body {
+  font-family: Avenir-Next, Roboto, sans-serif;
+}
+a {
+  text-decoration: none;
+}
+
+/*navgiation*/
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 5px;
+}
+header .navbar .first_div img {
+  width: 80px;
+}
+header .navbar .first_div {
+  display: inline;
+}
+header .navbar .secound_div {
+  display: inline-flex;
+  align-items: center;
+}
+header .navbar .secound_div ul {
+  display: flex;
+  width: auto;
+  column-gap: 10px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+header .navbar .secound_div ul a {
+  font-size: 16px;
+  color: #7f8c8d;
+  display: inline;
+}
+header .navbar .secound_div ul .apply {
+  background-color: #df6f3a;
+  padding: 3px 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 10px;
+}
+
+/*overlay section*/
+
+.container {
+  background: url(img/imgbg.jpeg);
+  overflow: hidden;
+  background-position: bottom;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.main_heading {
+  font-size: 90px;
+}
+.overlay {
+  width: 100vw;
+  background-color: #000000b3;
+  padding: 100px 20px;
+}
+
+.centered {
+  width: 70%;
+  padding-left: 50px;
+}
+.container h1 {
+  font-size: 90px;
+  line-height: 100px;
+  color: #fff;
+}
+.container .overlay h3 {
+  font-size: 33px;
+  line-height: 80px;
+  color: #fff;
+}
+.btn-1 {
+  display: block;
+  border: none;
+  color: #fff;
+  padding: 5px 55px;
+  background-color: #4992ca;
+  margin-bottom: 10px;
+}
+
+.btn-2 {
+  display: block;
+  height: 40px;
+  padding: 5px 30px;
+  color: #fff;
+  border-radius: 2px;
+
+  border: 2px solid #fff;
+  background-color: #0000;
+  margin-bottom: 10px;
+}
+
+.btn-3 {
+  display: block;
+  outline: none;
+  border-radius: 15px;
+  border: none;
+  padding: 10px 15px;
+}
+
+/*pocket-monster*/
+.pocket_monster {
+  width: 100vw;
+  height: fit-content;
+  text-align: center;
+  background: #4992ca;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.pocket_monster h2 {
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+
+.pocket_monster p {
+  padding: 10px 60px 10px 60px;
+  text-align: center;
+}
+
+.diff-monsters {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+.diff-monsters .monster {
+  margin: 2px;
+  padding: 10px 10px;
+}
+
+/*statistics*/
+.statistics {
+  width: 100vw;
+  height: fit-content;
+  text-align: center;
+}
+.statistics h2 {
+  font-size: 45px;
+  margin-bottom: 19px;
+}
+.statistics .statflex {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.statistics .statflex div {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  row-gap: 20px;
+  width: 35%;
+  min-width: 500px;
+}
+.statistics .statflex div h4 {
+  font-size: 30px;
+}
+/*year section*/
+.year {
+  width: 100%;
+  height: fit-content;
+  padding: 5px 0px;
+}
+.year h3 {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 15px;
+}
+.year {
+  text-align: center;
+  font-family: Avenir-Next, Roboto, sans-serif;
+  font-weight: 100;
+  padding: 5px 0px;
+}
+.year h3 {
+  font-size: 30px;
+}
+.year .grid_class {
+  padding: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(356px, 1fr));
+  row-gap: 20px;
+  justify-content: center;
+  grid-auto-rows: 150px;
+}
+.year .grid_class div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.year .grid_class div h6 {
+  font-size: 18px;
+}
+/*question*/
+.question {
+  width: 100vw;
+  background-color: #4992ca;
+  color: #fff;
+  padding: 5vh 10vw;
+}
+.question h2 {
+  margin-bottom: 5vh;
+  text-align: center;
+}
+.question ol ul {
+  padding: 0px 5vw;
+}
+.question ol ul li {
+  line-height: 25px;
+}
+
+/*battle*/
+
+.battle {
+  text-align: center;
+  padding: 2vh 5vw;
+}
+.battle h4 {
+  margin-top: 2vh;
+}
+.battle .flex_div {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5vh;
+  row-gap: 30px;
+}
+.battle .flex_div .left {
+  text-align: left;
+  margin-top: 4px;
+  width: 20vw;
+  min-width: 300px;
+  flex-grow: 1;
+}
+.battle .flex_div .right {
+  width: 50vw;
+  text-align: left;
+  min-width: 600px;
+  flex-grow: 2;
+}
+.battle .flex_div .left p {
+  margin-top: 2vh;
+  color: #7f8c8d;
+}
+.battle .flex_div .right table td,
+th,
+table {
+  border: 2px solid #8a8a8a;
+  color: #8a8a8a;
+  border-collapse: collapse;
+}
+.battle .flex_div .right table th {
+  color: #000;
+}
+.battle .flex_div .right table td,
+th {
+  padding: 5px;
+}
+.battle .flex_div .right p {
+  margin-top: 2vh;
+  font-weight: bolder;
+}
+.battle .ticket p {
+  color: #4992ca;
+}
+.battle .ticket button {
+  color: #fff;
+  margin-top: 8px;
+  background-color: #4992ca;
+  padding: 10px 55px;
+  border: none;
+}
+/*card-section*/
+
+.card .flex {
+  display: flex;
+  width: 100%;
+  min-width: 300px;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 10px;
+}
+.card .flex .first_div {
+  width: 15vw;
+  min-width: 300px;
+  text-align: center;
+  border: 1px solid #f2f2f2;
+  background-color: #f7f7f7;
+  border-top: 9px solid #4992ca;
+}
+.card > .flex > .first_div > p {
+  color: #89898c;
+}
+.card > .flex > .secounds {
+  padding: 10px 20px;
+  width: 15vw;
+  min-width: 300px;
+}
+/*year section*/
+.year {
+  background: #4992ca;
+  color: #fff;
+  padding: 15px 0px;
+}
+.year .grid_class img {
+  width: 150px;
+}
+
+/*know-more-1*/
+.know-more-1 {
+  width: 100vw;
+  height: 40vh;
+  background: #424242;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.know-more-1 h2 {
+  font-size: 33px;
+  margin-bottom: 2vw;
+  color: #fff;
+}
+.know-more-1 .btn-trans {
+  cursor: pointer;
+  border: 2px solid #fff;
+  background-color: transparent;
+  padding: 10px 45px;
+  color: #fff;
+}
+
+/*generation cards section*/
+.generation-card {
+  width: 100%;
+  height: 30%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.generation-card h3 {
+  font-size: 4vmin;
+  margin-top: 20px;
+  color: #424242;
+}
+.generation-card .cards-sec {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 10px 150px 10px 100px;
+}
+.generation-card .sec-2 {
+  margin-bottom: 20px;
+}
+.generation-card .line {
+  padding: 5px;
+  width: 100%;
+  background: #4992ca;
+}
+.generation-card #gen-head {
+  background: #dcdcdc;
+  border: 1px solid #dcdcdc;
+  text-align: start;
+  padding: 20px;
+}
+.generation-card .cards-sec h2 {
+  padding-bottom: 15px;
+  color: #000000;
+}
+
+.generation-card .generation-1 {
+  border: 1px solid #ffffff;
+  background: #f2f3f4;
+  margin: 10px;
+}
+.generation-card .generation-2 {
+  border: 1px solid #fff;
+  background: #f2f3f4;
+  margin: 10px;
+}
+.generation-card .generation-3 {
+  border: 1px solid #fff;
+  background: #f2f3f4;
+  margin: 10px;
+}
+.generation-card .generation-4 {
+  border: 1px solid #fff;
+  background: #f2f3f4;
+  margin: 10px;
+}
+
+/*Input Section*/
+.email {
+  width: 100vw;
+  height: 30vh;
+  background-color: #424242;
+  padding: 5vw;
+  color: white;
+  text-align: center;
+}
+.email h3 {
+  font-size: 2rem;
+}
+.email .email_flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 10px;
+}
+.email .email_flex input {
+  padding: 8px 10px 10px 2px;
+}
+.email .email_flex .submit {
+  border: 1px solid #fff;
+  background-color: #0000;
+  padding: 5px 15px;
+  border-radius: 2px;
+  color: white;
+}
+/*pokemon games*/
+.pokemon-games {
+  width: 100vw;
+  height: auto;
+  text-align: center;
+}
+.pokemon-games h3 {
+  font-size: 33px;
+  color: #7f8c8d;
+  margin-top: 10px;
+}
+.diff-games-sec {
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.diff-games-sec .games {
+  width: 250px;
+  margin: 5px;
+  padding: 20px 10px;
+}
+.pokemon-games span {
+  color: #000000;
+  font-weight: bold;
+}
+.pokemon-games p {
+  position: relative;
+  text-align: center;
+  padding: 5px;
+}
+.pokemon-games .pokemon-image img {
+  position: relative;
+  width: 50%;
+  height: 200px;
+}
+.pokemon-games .blue-btn {
+  padding: 10px 40px;
+  margin-bottom: 30px;
+  background: #4992ca;
+  border: transparent;
+  cursor: pointer;
+}
+
+/*designer*/
+.designers {
+  width: 100vw;
+  height: auto;
+  text-align: center;
+  background: #4992ca;
+}
+.designers h3 {
+  font-size: 30px;
+  color: #fff;
+  padding-top: 20px;
+}
+.our_designers {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.our_designers .team_member {
+  width: 250px;
+  margin: 5px;
+  padding: 20px 10px;
+}
+.our_designers .team_member .member_img img {
+  position: relative;
+  border-radius: 50%;
+  width: 50%;
+  height: 50%;
+}
+.our_designers .team_member h4 {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.our_designers .team_member span {
+  font-size: 15px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+.our_team .team_member p {
+  margin-top: 20px;
+  font-size: 10px;
+  line-height: 20px;
+}
+
+/*logos-sections*/
+.logos {
+  width: 100vw;
+  height: 50vh;
+  text-align: center;
+  border: 1px transparent #7f8c8d;
+  display: grid;
+  place-items: center;
+}
+.logos h3 {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: #424242;
+  margin-bottom: 1vw;
+}
+.logos .logos-content {
+  width: 50vw;
+  column-gap: 55px;
+  row-gap: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.logos .logos-content img {
+  width: 25%;
+}
+
+/*upper-footer*/
+
+.know-more {
+  width: 100vw;
+  height: 40vh;
+  background: #4992ca;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.know-more h3 {
+  font-size: 3vmax;
+  margin-bottom: 5vw;
+  color: #fff;
+}
+.know-more .btn-trans {
+  cursor: pointer;
+  border: 2px solid #fff;
+  background-color: transparent;
+  padding: 10px 45px;
+  color: #fff;
+}
+
+/*footer*/
+footer {
+  width: 100vw;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  background: #000000;
+}
+footer .content {
+  max-width: 1350px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  justify-content: space-evenly;
+  list-style: none;
+}
+footer .content p {
+  color: #424242;
+  cursor: pointer;
+  font-size: 20px;
+  margin-bottom: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+footer .content a {
+  color: #fff;
+  cursor: pointer;
+}
+
+footer .content ul li {
+  text-align: center;
+}
+footer .content .media-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/*media section*/
+@media only screen and (max-width: 850px) {
+  /*navigartion*/
+  .navbar {
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .first_div {
+    align-self: center;
+  }
+  .secound_div {
+    flex-direction: column;
+    height: 30%;
+  }
+  .secound_div ul {
+    flex-direction: column;
+    padding-top: 20px;
+  }
+  /*overlay*/
+  .container h1 {
+    font-size: 50px;
+  }
+  /*pocket-monster*/
+  .pocket_monster .diff-monsters {
+    flex-wrap: wrap;
+  }
+  /*battle*/
+  .battle {
+    min-width: 80%;
+  }
+  .battle .flex_div .right {
+    min-width: 80%;
+  }
+  /*generation*/
+  .generation-card {
+    flex-direction: column;
+  }
+  .generation-card .cards-sec {
+    flex-direction: column;
+  }
+  .email {
+    height: fit-content;
+  }
+  .email .email_flex {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .email .submit {
+    margin-top: 5px;
+  }
+  .logos {
+    height: fit-content;
+  }
+  .logos .logos-content {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-self: center;
+  }
+}
